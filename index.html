@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="sassUtilities.css" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="./src/main.css" />
     <title>Crypto Profit Calculator</title>
   </head>
   <body>
-    <h1>Crypto Profit Calculator</h1>
-    <div class="container">
+    <h1 class="text-center m-2">Crypto Profit Calculator</h1>
+    <div class="container d-flex">
       <form id="from-currency">
         <div class="form-group">
           <label for="crypto-select">Select a crypto currency</label>
@@ -52,7 +52,6 @@
           />
         </div>
         <div class="exit-price">
-          <!-- <input type="radio" /> -->
           <div class="form-group">
             <label for="sell-price">Sell price $</label>
             <input
@@ -101,6 +100,7 @@
 
     <script>
       const container = document.querySelector(".container"),
+        sellPrice = document.getElementById("sell-price"),
         selectMarketPrice = document.getElementById("SelectMarket-price"),
         cryptoCurrency = document.getElementById("crypto-select");
 
